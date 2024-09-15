@@ -4,20 +4,20 @@ from email.mime.text import MIMEText
 import password_manager
 #
 # #
-password = password_manager.password
+password = "Your password"  # App generating password
 subject = "Hello Praveen"
 body = "Connection Successfully"
 msg = MIMEText(body, "plain")
-msg['From'] = "pk9777066@gmail.com"
-msg["To"] = "praveentechci2023@gmail.com"
+msg['From'] = "Your email"
+msg["To"] = "Reciver eamil"
 msg["Subject"] = subject
 #
 # #
 with SMTP(host="smtp.gmail.com", port=587) as connection:
     connection.starttls()
-    connection.login(user= "pk9777066@gmail.com", password=password)
-    connection.sendmail(from_addr="pk9777066@gmail.com",
-                        to_addrs="praveentechci2023@gmail.com",
+    connection.login(user= "Your email", password=password)
+    connection.sendmail(from_addr="Your email",
+                        to_addrs="Reciver eamil",
                         msg=msg.as_string())
 print("Send Successfully")
 
