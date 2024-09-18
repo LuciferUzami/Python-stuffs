@@ -1,0 +1,21 @@
+Red
+Blue
+Green
+Yellow
+Orange
+Purple
+Pink
+White
+Gray
+Cyan
+Magenta
+AliceBlue
+AntiqueWhite
+beige
+coral
+DarkCyan
+DarkGoldenrod
+DarkGrey
+DarkKhaki
+Dark Magenta
+cyan3
