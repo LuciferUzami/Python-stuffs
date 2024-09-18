@@ -29,17 +29,16 @@ if send_time == "6 : 00 AM":
     
     """
     msg = MIMEText(body, "plain")
-    msg['From'] = "Your email"
-    msg["To"] = "Reciver email"
+    msg['From'] = "pk9777066@gmail.com"
+    msg["To"] = "praveentechci2023@gmail.com"
     msg["Subject"] = subject
     #
     # #
     with SMTP(host="smtp.gmail.com", port=587) as connection:
         connection.starttls()
-        connection.login(user= "Your mail", password=password)
-        connection.sendmail(from_addr="Your mail",
-                            to_addrs="Reciever mail",
+        connection.login(user="pk9777066@gmail.com", password=password)
+        connection.sendmail(from_addr="pk9777066@gmail.com",
+                            to_addrs="jothiramanpraveen007@gmail.com",
                             msg=msg.as_string())
     print("Send Successfully")
-else:
-    print("Not have a time yet")
+

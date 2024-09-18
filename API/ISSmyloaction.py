@@ -4,13 +4,12 @@ import requests
 import password_manager as passwords
 import time
 
-
 # function for email sending
 def emailSender():
     subject = "ISS finder message"
     body = "Get out from home bro ISS on your head TOP"
-    my_email = "your email"
-    respond_email = "receiver email"
+    my_email = "pk9777066@gmail.com"
+    respond_email = "jothiramanpraveen007@gmail.com"
     password = passwords.password
     # Create object
     msg = MIMEText(body, "plain")
@@ -25,9 +24,7 @@ def emailSender():
         connection.sendmail(from_addr=my_email,
                             to_addrs=respond_email,
                             msg=msg.as_string())
-
     print("Send")
-
 
 # This function for get ISS currect lat and lon location
 def locationForISS():
@@ -47,10 +44,10 @@ while True:
     time.sleep(60)
 
     # Get my lon and lat
-    home_longitude = "your longitude location"
-    home_latitude = "your latitude location"
+    home_longitude = 79.7987
+    home_latitude = 11.1028
 
-    # Call ISS location function
+    # Call ISS location function convert string to float
     longitude = float(locationForISS()[1])
     latitude = float(locationForISS()[0])
 
