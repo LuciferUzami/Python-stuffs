@@ -64,7 +64,7 @@ while race_start:
     for player in players:
         player.forward(randint(0, 10))
         # Check for a winner
-        if player.xcor() >= 250:  # Finish line
+        if player.xcor() >= 280:  # Finish line
             winner = player.color()[0]
             race_start = False
             break
